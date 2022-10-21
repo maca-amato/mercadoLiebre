@@ -2,7 +2,9 @@ const express = require('express');
 const path = require ("path");
 const app = express();
 
-app.use(express.static("public"));
+app.use(express.static("public")); // PREGUNTAR xq usar lo de abajo y no esto.
+// const publicFolderPath = path.resolve (_dirname, './public');
+// app.use(express.static(publicFolderPath));
 
 app.listen (3000, () => console.log ("Servidor corriendo"));
 
