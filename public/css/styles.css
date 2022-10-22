@@ -1,4 +1,39 @@
+:root {
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif}
+
 body {
-    background-color: #ffff00;
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--yellow);
+    font-family: var(--base-font-family); 
+    /* o font-family: 'Roboto', sans-serif; */
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
+.cuerposDeTexto {
+    font-size: 12px;
+}
+
+.burger-menu {
+    color: var(--light-gray);
+    text-align: center;
 }
