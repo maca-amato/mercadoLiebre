@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 :root {
     --yellow: #EAC926;
     --dark-blue: #03264C;
@@ -8,7 +13,7 @@
     --base-font-family: 'Roboto', sans-serif}
 
 body {
-    background-color: var(--yellow);
+    background-color: var(--light-gray);
     font-family: var(--base-font-family); 
     /* o font-family: 'Roboto', sans-serif; */
 }
@@ -29,11 +34,77 @@ body {
     font-size: 16px;
 }
 
-.cuerposDeTexto {
+p {
     font-size: 12px;
+}
+
+div.top-header {
+    padding: 5%;
+}
+
+header {
+    background-color: var(--yellow);
+}
+
+header div.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+header nav {
+    font-size: 12px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black
+}
+
+header.form.input {
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    color: var(--gray);
+    padding: 2px;
+}
+
+header.form.sumbit {
+    background-color: white;
+    border: 1px solid black;
+    color: var(--gray);
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .burger-menu {
     color: var(--light-gray);
     text-align: center;
 }
+
+.burger-menu i {
+   
+}
+
+article div.main-article {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer div.iconos-footer {
+    color: var(--light-blue);
+    size: 2em;
+    margin-bottom: 10px;
+}
+
