@@ -18,6 +18,10 @@ body {
     /* o font-family: 'Roboto', sans-serif; */
 }
 
+body main section header {
+    background-color: var(--light-gray);
+}
+
 .titulares {
     font-size: 24px;
 }
@@ -32,6 +36,7 @@ body {
 
 .descripciones {
     font-size: 16px;
+    font-weight: normal;
 }
 
 p {
@@ -86,12 +91,16 @@ header div.top-header p{
 }
 
 .burger-menu {
-    color: var(--light-gray);
     text-align: center;
 }
 
 .burger-menu i {
-   
+    color: var(--light-gray);
+    background-color: var(--light-blue);
+    padding: 10px;
+    margin: auto;
+    border-radius: 6px;
+    font-size: 20px;
 }
 
 article div.main-article {
