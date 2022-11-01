@@ -18,6 +18,10 @@ body {
     /* o font-family: 'Roboto', sans-serif; */
 }
 
+body {
+    width: 90vw;
+}
+
 body main section header {
     background-color: var(--light-gray);
 }
@@ -37,6 +41,7 @@ body main section header {
 .descripciones {
     font-size: 16px;
     font-weight: normal;
+    color:var(--gray);
 }
 
 p {
@@ -51,22 +56,15 @@ header {
     background-color: var(--yellow);
 }
 
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
 header div.logo {
     width: 50%;
     padding: 10px;
-}
-
-header nav {
-    font-size: 12px;
-}
-
-header ul li {
-    list-style-type: none;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: black
 }
 
 header.form.input {
@@ -84,10 +82,17 @@ header.form.sumbit {
     width: 10%;
 }
 
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+header nav {
+    font-size: 12px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black
 }
 
 .burger-menu {
