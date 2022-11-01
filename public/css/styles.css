@@ -184,7 +184,7 @@ footer div.iconos-footer {
     margin-bottom: 10px;
 }
 
-@media (min-width: 361px){
+@media (min-width: 365px){
     main section article .descripciones{
         display: block;
     }
@@ -209,6 +209,13 @@ footer div.iconos-footer {
     .descuentos{
         width: 50%;
     }
+
+    body header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
 }
 
 @media (min-width: 769px){
