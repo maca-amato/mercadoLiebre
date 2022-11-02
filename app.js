@@ -2,16 +2,9 @@ const express = require('express');
 const path = require ("path");
 const app = express();
 
-app.use(express.static("public")); // PREGUNTAR xq usar lo de abajo y no esto.
-// const publicFolderPath = path.resolve (_dirname, './public');
-// app.use(express.static(publicFolderPath));
+app.use(express.static("public"));
 
-let PORT = process.env.PORT || 3000;
-app.listen (PORT, () => {
-    console.log("Servidor corriendo" + 3000)
-})
-
-//app.listen (3000, () => console.log ("Servidor corriendo"));
+app.listen (3000, () => console.log ("Servidor corriendo"));
 
 app.get ("/", (req, res) => {
     res.sendFile (path.join (__dirname, "/views/home.html"));

@@ -1,149 +1,136 @@
+:root{
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --light-blue: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
 *{
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-:root {
-    --yellow: #EAC926;
-    --dark-blue: #03264C;
-    --light-blue: #1259c3;
-    --gray: #666666;
-    --light-gray: #ebebeb;
-    --green: #39b54a;
-    --base-font-family: 'Roboto', sans-serif}
-
-body {
-    background-color: var(--light-gray);
-    font-family: var(--base-font-family); 
-    /* o font-family: 'Roboto', sans-serif; */
-}
-
-h3 {
-    font-size: 24px;
-    color: var(--gray);
-}
-
-p {
-    font-size: 12px;
-}
-
-header {
-    background-color: var(--yellow);
-}
-
-div.top-header {
-    display: flex;
-    padding: 5%;
-    flex-wrap: wrap;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-header div.logo {
-    width: 50%;
-    padding: 10px;
-}
-
-header.form {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
-}
-
-header nav {
-    font-size: 12px;
-    margin-left: 20px;
-}
-
-header ul li {
-    list-style-type: none;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: black
-}
-
-header.form.input {
-    background-color: white;
-    border: 1px solid black;
-    outline: none;
-    color: var(--gray);
-    padding: 2px;
-}
-
-header.form.sumbit {
-    background-color: white;
-    border: 1px solid black;
-    color: var(--gray);
-    width: 10%;
-}
-
-div.burger-menu {
-    text-align: center;
-}
-
-div.burger-menu i {
-    color: var(--light-gray);
-    background-color: var(--light-blue); 
-    padding: 10px; 
-    margin: auto;
-    border-radius: 6px;
-    font-size: 20px;
-}
-
-div.ultima-visita,
-div.ofertas {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.precios {
-    font-size: 18px;
-    width: 30%;
-}
-
-.descuentos {
-    font-size: 16px;
-    width: 70%;
-}
-
-.descripciones {
-    font-size: 16px;
-    font-weight: normal;
-    color:var(--gray);
-    display: none;
-    margin-top: 20px;
-}
-
-section.banner img { 
-    width: 100%;
-}
-
-main {
+main{
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
-main section article{
-    background-color: #fff;    
+header{
+    background-color: var(--yellow);
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 50%;
+}
+
+.top p{
+    margin: 20px 0 0;
+    width: 100%;
+}
+
+.logo{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.search-bar input{
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 40vw;
+}
+
+
+.fa-search{
+    font-size: 20px;
+    margin: 5px 5px;
+}
+
+nav{
+    display: none;
+}
+
+body{
+    background-color: var(--gris-claro);
+    margin: 0px;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    background-color: var(--light-blue);
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
     margin: 10px 0px;
 }
 
-main section article img{
+.banner{
     width: 100%;
 }
 
-main section article i,
-.descuentos{
-    color: var(--green);
+ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.titulares{
+    width: 100%;
+    margin: 20px 0;
+    font-size: 24px;
+    color: var(--gris-oscuro);  
+}
+
+header .sites{
+    font-size: 12px;
+}
+
+.cuotasTarjeta{
+    font-size: 12px;
+    text-align: center;
+}
+
+main article{
+    background-color:#fff;
+    margin: 10px 0;
+}
+
+main article img{
+    width: 100%;
+    padding: 10px 0;
+}
+
+main article .article-info{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-top: 1px solid var(--gris-claro);
+    position: relative;
 }
 
 main section article i{
@@ -152,6 +139,7 @@ main section article i{
     padding: 5px;
     width: 30px;
     height: 30px;
+    color: var(--verde);
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
@@ -160,68 +148,274 @@ main section article i{
     top: -15px;
 }
 
-main section h3{
-    margin: 20px 0px;
-}
-
-article div.articulo-principal{
-    width: 100%;
+.precio-descuento{
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    border-top: 1px solid #ebebeb;
-    position: relative;
-    padding: 15px;
+    align-items: flex-end;
 }
 
-footer {
+.precio{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+.descuento{
+    font-size: 16px;
+    color: var(--verde);
+    flex-grow: 0.7;
+    margin-left: 5px;
+}
+
+.descripcion{
+    height: 0;
+    opacity: 0;
+    font-size: 16px;
+    color: var(--gris-oscuro);  
+    width: 100%;
+}
+
+footer{
+    background-color: #fff;
     text-align: center;
+    color: var(--gris-oscuro);    
 }
 
-footer div.iconos-footer {
+footer i{
     color: var(--light-blue);
-    size: 2em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
-@media (min-width: 365px){
-    main section article .descripciones{
-        display: block;
-    }
+footer .perks{
+    width: 95%;
+    margin: auto;
+    padding: 20px 0px;
+}
 
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+footer .perks h3{
+    font-size: 1.5em;
+    margin:0;
+}
 
-    main section div.productos{
+footer .perks p{
+    margin-top: 0px;
+}
+
+footer .copyright{
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+    margin: 5px;
+}
+
+.register form p{
+    width: 100%;
+    margin: 20px;
+}
+
+.register form .form-title{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+form .textbox{
+    height: 40px;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 80vw;
+}
+
+.register form .selectors-label{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.register .form-interests .selectors-label{
+    display: block;
+    width: 100%;
+}
+
+.register .form-profile-pic input{
+    margin: 10px;
+}
+
+.register .form-buttons{
+    margin: 30px;    
+}
+
+.register .form-buttons button{
+    background-color: var(--light-blue);
+    color: #fff;
+    border: 0px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.register .form-buttons button a {
+    color: #fff;
+}
+
+.login form p{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.login form{
+    text-align: center;
+}
+
+.login .form-buttons button{
+    background-color: var(--light-blue);
+    color: #fff;
+    border: 0px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 80vw;
+}
+
+.login .form-buttons button a{
+    color: #FFF
+}
+
+.login h2{
+    margin: 0 5vw;
+}
+
+@media (min-width: 426px){
+    nav{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    main section div.productos article{
-        width: 45%;
     }
 
-    .precios,
-    .descuentos{
+    .navbar-site, .navbar-login{
+        display: flex;
         width: 50%;
     }
 
-    body header nav ul{
+    .sites{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sites li{
+        margin: 20px 10px;
+    }
+
+    .navbar-login{
+        justify-content: flex-end;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .ultimasVisitas, .ofertas{
         display: flex;
         flex-wrap: wrap;
-        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    main article{
+        width: 45%;
     }
 
 }
 
 @media (min-width: 769px){
-    main section div.productos article{
-        width: 22%;
+    .top p{
+        margin: 0;
+        width: 30%;
+        font-size: 14px;
+    }
+    
+    .search-bar{
+        width: 30%;
+    }
+    
+    .logo{
+        width: 30%;
+    }
+
+    .sites li{
+        margin: 20px;
+    }
+
+    main article{
+        width: 20%;
+        transition: all, 300ms;
+    }
+
+    header .sites{
+        font-size: 14px;
+    }
+
+    form .textbox{
+        height: 40px;
+        border: 0px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        width: 40vw;
+    }
+
+    .login .form-buttons button{
+        width: 40vw;
+        transition: background-color 300ms;
+    }
+
+    .login h2{
+        margin: 0 25vw;
+    }
+
+    main article:hover{
+        box-shadow: 0px 0px 20px rgb(100, 100, 100);
+        margin-bottom: 0;
+    }
+
+    main section article i{
+        transition: all 300ms;
+    }
+
+    .descripcion{
+        height: auto;
+        margin: 20px 0 0 0;
+        transition: all, 300ms;
+    }
+
+    article:hover .descripcion{
+        /* height: auto; */
+        opacity: 1;
+        flex-grow: 1;
+    }
+
+    main section article:hover i{
+        transform: rotate(-90deg)
+    }
+
+    .login .form-buttons button:hover{
+        background-color: #0022AA;
+    }
+
+    footer{
+        display: flex;    
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer .perks{
+        width: 30%;
+        margin: 20px 0;
+        padding: 20px 0px;
+    }
+
+    footer i{
+        transition: color 300ms;
+    }
+
+    footer i:hover{
+        color: var(--verde);
     }
 }
-
-
